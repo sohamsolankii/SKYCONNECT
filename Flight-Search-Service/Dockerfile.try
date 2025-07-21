@@ -1,0 +1,25 @@
+# Base image
+FROM node:20.19.4-alpine3.22
+
+# Set the working directory
+WORKDIR /app
+
+# Set the working directory inside the container
+COPY package-lock.json /app/package-lock.json
+COPY package.json /app/package.json
+
+# Install dependencies
+RUN npm install 
+
+COPY /src /app/src
+COPY .env /app/.env
+
+# port to run application only for documentation purpose
+# still we needs to do port mapping in docker run command while 
+EXPOSE 3000
+
+# run the application
+ENTRYPOINT ["npm", "run", "start"]
+
+
+# we can write command in any order but we have to consider that docker will execute them in the order and cached them so we have to keep that in our mind

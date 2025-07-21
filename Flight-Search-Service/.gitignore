@@ -2,3 +2,5 @@
 node_modules/
 src/config/config.json
 combined.log
+Readme.md
+docker-notes.txt

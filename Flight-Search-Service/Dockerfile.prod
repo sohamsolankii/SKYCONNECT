@@ -1,0 +1,34 @@
+# Base image
+FROM node:20.19.4-alpine3.22 as base
+
+# stage 1: 
+FROM base as builder
+
+WORKDIR /home/build
+
+COPY package-lock.json .
+COPY package.json .
+
+RUN npm install 
+
+COPY /src /src
+
+ENTRYPOINT ["npm", "run", "start"]
+
+# stage 2: Runner
+FROM base as runner
+
+WORKDIR /home/app
+
+COPY --from=builder /home/build/package*.json .
+COPY --from=builder /home/build/build /home/app/build
+
+RUN npm install --omit=dev
+
+# after this point, user will not be root 
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nodejs
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
