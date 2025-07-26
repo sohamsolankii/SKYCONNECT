@@ -25,8 +25,8 @@ The architecture of SKYCONNECT is based on microservices, where each service is 
 ## Tech Stack
 - NodeJS, ExpressJS, MySQL, Sequelize, RabbitMQ, NodeMailer, JWT, Winston, Swagger
 
-## Diagram
-![Architecture Diagram](https://github.com/sohamsolankii/SKYCONNECT/blob/main/skyconnect.png)
+## Database Diagram
+![Database Diagram](https://github.com/sohamsolankii/SKYCONNECT/blob/main/skyconnect.png)
 
 ## High Level Architecture
 ![High Level Architecture](https://github.com/sohamsolankii/SKYCONNECT/blob/main/high%20level%20design.png)
