@@ -5,7 +5,9 @@
 - [Microservices Breakdown](#microservices-breakdown)
 - [Tech Stack](#tech-stack)
 - [Diagram](#diagram)
+- [High Level Architecture](#high-level-architecture)
 - [Setup Guide For Every Service](#setup-guide-for-every-service)
+- [Contributing](#contributing)
 
 ## Description
 The architecture of SKYCONNECT is based on microservices, where each service is responsible for a specific piece of functionality. This approach ensures that the system is scalable, maintainable, and can be developed and deployed independently.
@@ -25,6 +27,9 @@ The architecture of SKYCONNECT is based on microservices, where each service is 
 
 ## Diagram
 ![Architecture Diagram](https://github.com/sohamsolankii/SKYCONNECT/blob/main/skyconnect.png)
+
+## High Level Architecture
+![High Level Architecture](https://github.com/sohamsolankii/SKYCONNECT/blob/main/high%20level%20architecture.png)
 
 ## Setup Guide For Every Service
 
@@ -53,3 +58,15 @@ The architecture of SKYCONNECT is based on microservices, where each service is 
  ```
  npm run dev
  ```
+- To run the migrations, execute:
+ ```
+ npx sequelize db:migrate
+ ```
+- To run the seeders, execute:
+ ```
+ npx sequelize db:seed:all
+ ```
+ 
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
