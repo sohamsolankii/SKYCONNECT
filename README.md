@@ -29,7 +29,7 @@ The architecture of SKYCONNECT is based on microservices, where each service is 
 ![Architecture Diagram](https://github.com/sohamsolankii/SKYCONNECT/blob/main/skyconnect.png)
 
 ## High Level Architecture
-![High Level Architecture](https://github.com/sohamsolankii/SKYCONNECT/blob/main/high%20level%20architecture.png)
+![High Level Architecture](https://github.com/sohamsolankii/SKYCONNECT/blob/main/high%20level%20design.png)
 
 ## Setup Guide For Every Service
 
