@@ -4,6 +4,7 @@
 - [Description](#description)
 - [Microservices Breakdown](#microservices-breakdown)
 - [Tech Stack](#tech-stack)
+- [Diagram](#diagram)
 - [Setup Guide For Every Service](#setup-guide-for-every-service)
 
 ## Description
@@ -20,7 +21,10 @@ The architecture of SKYCONNECT is based on microservices, where each service is 
 |**Reminder Service** | Sends booking reminders using RabbitMQ | [Reminder Service](https://github.com/sohamsolankii/SKYCONNECT/tree/main/Flight-Notification-Service) |
 
 ## Tech Stack
-- NodeJS, ExpressJS, MySQL, Sequelize, RabbitMQ, NodeMailer, JWT, Swagger
+- NodeJS, ExpressJS, MySQL, Sequelize, RabbitMQ, NodeMailer, JWT, Winston, Swagger
+
+## Diagram
+![Architecture Diagram](https://github.com/sohamsolankii/SKYCONNECT/blob/main/Architecture_Diagram.png)
 
 ## Setup Guide For Every Service
 
